@@ -1,0 +1,56 @@
+.flaskulator
+{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+form {
+  width: 100%;
+  height: 100%;
+}
+table{
+  width: 500px;
+  height: 300px;
+  cell-padding: 10;
+  text-align: center;
+  border: 1px solid black;
+}
+tr, td {
+  border: 1px solid blue;
+}
+
+.digits{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #a1dcff;
+  font-size: 24;
+}
+
+.operators{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #d4f099;
+  font-size: 24;
+}
+
+.display {
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  font-family: 'Segment7Standard';
+  font-weight: normal;
+  font-style: italic;
+  font-size: 36;
+  color: #ffffff;
+  text-align: right;
+}
+
+.submit {
+  width: 100%;
+  height: 100%;
+  background-color: #a1ffa4;
+  font-size: 24;
+}
