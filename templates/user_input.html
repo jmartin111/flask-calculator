@@ -4,8 +4,8 @@
     <script type="text/javascript" src="static/form.js"></script>>
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css"/>
   </head>
-  <body>
-    <form class="flaskulator" action="http://127.0.0.1:5000/results" method="POST">
+  <body onload="displayInit()">
+    <form class="flaskulator">
       <table>
         <tr id="d">
           <td colspan="4"><input class="display" type="text" name="display" id="display"></td>
@@ -26,10 +26,10 @@
           <td><input class="digits" type="button" id="1" name="1" value="1" onclick="updateDisplay(1)"></td>
           <td><input class="digits" type="button" id="2" name="2" value="2" onclick="updateDisplay(2)"></td>
           <td><input class="digits" type="button" id="3" name="3" value="3" onclick="updateDisplay(3)"></td>
-          <td><input class="operators" type="button" id="mul" name="mul" value="x" onclick="processValue(this.value)"></td>
+          <td><input class="operators" type="button" id="mul" name="mul" value="x" onclick="processValue('*')"></td>
         </tr>
         <tr>
-          <td colspan="3"><input class="submit" type="submit" name="calculate" value="=" style="width:100%"></td>
+          <td colspan="3"><input class="calc" type="button" name="calc" value="=" onclick="calculate()"></td>
           <td><input class="operators" type="button" id="div" name="div" value="/" onclick="processValue(this.value)"></td>
         </tr>
       </table>
