@@ -8,7 +8,7 @@
     <form class="flaskulator">
       <table>
         <tr id="d">
-          <td colspan="4"><input class="display" type="text" name="display" id="display"></td>
+          <td colspan="4"><input class="display" type="text" name="display" id="display" readonly></td>
         </tr>
         <tr id="789">
           <td><input class="digits" type="button" id="7" name="7" value="7" onclick="updateDisplay(7)"></td>
@@ -29,7 +29,8 @@
           <td><input class="operators" type="button" id="mul" name="mul" value="x" onclick="processValue('*')"></td>
         </tr>
         <tr>
-          <td colspan="3"><input class="calc" type="button" name="calc" value="=" onclick="calculate()"></td>
+          <td colspan="2"><input class="digits" type="button" id="0" name="0" value="0" onclick="updateDisplay(0)"></td>
+          <td colspan="1"><input class="calc" type="button" name="calc" value="=" onclick="calculate()"></td>
           <td><input class="operators" type="button" id="div" name="div" value="/" onclick="processValue(this.value)"></td>
         </tr>
       </table>

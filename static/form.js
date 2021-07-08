@@ -6,8 +6,9 @@ function displayInit() {
 }
 
  function updateDisplay(v) {
-    if (equation == "") {
+    if (equation == "*") {
         display.value = "";
+        equation = "";
     }
     display.value += v;
  }
@@ -30,5 +31,6 @@ function displayInit() {
 
     // clear operands and operators and the equation
     values = []
-    equation = ""
+    // use this as a token for updateDisplay
+    equation = "*"
  }
