@@ -8,13 +8,16 @@
     <form class="flaskulator">
       <table>
         <tr id="d">
-          <td colspan="4"><input class="display" type="text" name="display" id="display" readonly></td>
+          <td colspan="5"><input class="display" type="text" name="display" id="display" readonly></td>
         </tr>
         <tr id="789">
           <td><input class="digits" type="button" id="7" name="7" value="7" onclick="updateDisplay(7)"></td>
           <td><input class="digits" type="button" id="8" name="8" value="8" onclick="updateDisplay(8)"></td>
           <td><input class="digits" type="button" id="9" name="9" value="9" onclick="updateDisplay(9)"></td>
           <td><input class="operators" type="button" id="add" name="add" value="+" onclick="processValue(this.value)"></td>
+          <td><input class="operators" type="button" id="square" name="square" value="x^y"
+                     onclick="processValue('**')"
+                     style="font-style:italic; font-size:100%"></td>
         </tr>
         <tr id="456">
           <td><input class="digits" type="button" id="4" name="4" value="4" onclick="updateDisplay(4)"></td>
